@@ -2,7 +2,6 @@ import {
   ReactNode,
   createContext,
   useContext,
-  useEffect,
   useMemo,
   useState,
 } from "react";
@@ -22,6 +21,7 @@ const AuthContext = createContext<AuthContextProps>({
   user: null,
   isShowModal: false,
   form: "login",
+  // @ts-ignore
   addUser(user) {},
   toggleForm() {},
   logOut() {},

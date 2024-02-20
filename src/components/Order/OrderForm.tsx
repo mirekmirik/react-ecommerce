@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, Input, InputNumber, Spin, message } from "antd";
+import { Button, Form, Input, Spin, message } from "antd";
 import { User } from "../../api/User/type";
 import { postFetchCreateOrder } from "../../api/Order/Order";
 import { CartProduct } from "../../context/CartContext";

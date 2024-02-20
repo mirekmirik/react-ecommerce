@@ -45,7 +45,7 @@ const ProductsPage = () => {
   const [initialFetchComplete, setInitialFetchComplete] = useState(false);
   const isWasTypingRef = useRef(false);
 
-  // the problem of API is that there are no pictures of the some products, so i delete products without them
+  // the problem of API is that there are no pictures of some products, so i delete products without them
   const deleteItemsWithoutImage = (products: Product[]) => {
     const items = products.filter((product) => product.images[0][0] !== "[");
     return items;

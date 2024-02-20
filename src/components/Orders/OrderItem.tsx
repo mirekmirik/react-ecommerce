@@ -1,6 +1,5 @@
-import { Card, Flex } from "antd";
+import { Flex } from "antd";
 import { Order } from "../../api/Order/type";
-import CartItem from "../Cart/CartItem";
 import CartList from "../Cart/CartList";
 
 interface OrderItemProps {

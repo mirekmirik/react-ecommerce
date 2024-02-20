@@ -8,6 +8,7 @@ type OrderContextProps = {
 
 const OrderContext = createContext<OrderContextProps>({
   orders: [],
+  // @ts-ignore
   addOrder(order) {},
 });
 

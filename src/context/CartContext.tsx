@@ -2,7 +2,6 @@ import {
   ReactNode,
   createContext,
   useContext,
-  useEffect,
   useMemo,
   useState,
 } from "react";
@@ -10,7 +9,9 @@ import { Product } from "../api/Products/type";
 
 const CartContext = createContext({
   cartItems: [] as CartProduct[],
+  // @ts-ignore
   addToCart: (item: Product) => {},
+  // @ts-ignore
   removeFromCart: (index: number) => {},
   toggleShowCart: () => {},
   isShowCart: false,
@@ -33,15 +34,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cartItems, setCartItems] = useState<CartProduct[]>(storagedCart || []);
   const [isShowCart, setShowCart] = useState(false);
 
-  // useEffect(() => {
-  //   const storagedCart = localStorage.getItem("cart");
-  //   if (storagedCart) {
-  //     const cart = JSON.parse(storagedCart);
-  //     setCartItems(cart);
-  //   } else {
-  //     setCartItems([]);
-  //   }
-  // }, [localStorage.getItem("cart")]);
+
 
   const addToCart = (item: Product) => {
     const foundItemIdx = cartItems.findIndex(

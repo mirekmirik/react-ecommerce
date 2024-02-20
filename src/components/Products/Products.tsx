@@ -1,6 +1,5 @@
 import ProductList from "./ProductList";
 import { Product } from "../../api/Products/type";
-import SkeletonList from "../Skeleton/SkeletonList";
 
 interface ProductsProps {
   products: Product[];

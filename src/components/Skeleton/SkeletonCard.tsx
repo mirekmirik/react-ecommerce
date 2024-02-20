@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, Divider } from "antd";
+import { Avatar, Card } from "antd";
 import Meta from "antd/es/card/Meta";
 
 const SkeletonCard: React.FC = () => {
